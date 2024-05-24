@@ -1,0 +1,147 @@
+:root {
+    --bg-body : #181419;
+    --bg-nav : #db4648;
+}
+
+/*
+hola soy un comentario
+*/
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-body);
+    font-family: "Nunito", sans-serif;
+    color: #FFF;
+}
+
+
+header {
+    position:sticky;
+    top:0;
+}
+
+nav {
+    background-color: var(--bg-nav);
+    height: 15vh;
+    display:flex;
+    /*al eje principal row*/
+    justify-content: space-between;
+    /*al eje secundario column*/
+    align-items: center;
+    padding: 0 50px;
+}
+
+#nav-links {
+    display: flex;
+    /*quitar los puntos de los li*/
+    list-style: none;
+    gap: 30px;
+}
+
+
+#nav-links li a {
+    text-decoration: none; /*saco el subrayado*/
+    color: inherit; /*saco el color violeta y fuerzo a que tome el color aplicado al resto del texto defin en el body*/
+}
+
+h2 {
+    font-size: 3em; 
+}
+
+img {
+    width: 35vw;
+}
+
+#banner {
+    height: 85vh;
+    /*estilos para la imagen de fondo de la seccion*/
+    background-image: url(../img/banner-bg.jpg);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    }
+
+#buscador {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center; /*eje principal column (vertical)*/
+    align-items: center;
+}
+
+
+#tendencias {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+.movies-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+*/
+
+
+
+
+/*estilos seccion tendencias con grid*/
+
+.movie-item-img{
+    height: 200px;
+    width: 150px;
+}
+
+.movie-item-detail {
+    display:none;
+}
+
+.movies-grid {
+    height: 800px;
+    display:grid;
+
+    /*columnas y filas*/
+    grid-template-columns: repeat(4,200px);
+    grid-template-rows: repeat(2,180px);
+
+
+    /*UBICACION DE LA GRILLA CON RESPECTO A LA ETIQUETA PADRE*/
+   /* justify-content: center; EJE PRINCIPAL(FILA HORIZONTAL)*/
+   /* align-content: center; EJE HORIZONTAL(COLUMNA VERTICAL)*/
+
+    place-content: center; 
+
+    /*UBICO LOS ITEMS CON RESPECTO A SU CELDA*/
+   /* justify-items: center; EJE PRINCIPAL(FILA HORIZONTAL)*/
+   /* align-items: center; EJE HORIZONTAL(COLUMNA VERTICAL)*/
+
+    place-items: center;
+
+    gap:28px;
+
+}
+
+#movie1:hover{
+    transform: scale(1.5);
+}
+#movie2:hover{
+    transform: scale(1.5);
+}
+#movie3:hover{
+    transform: scale(1.5);
+}
