@@ -64,11 +64,12 @@ nav {
 }
 
 h2 {
-    font-size: 3em; 
+    font-size: 3em;
+    
 }
 
 img {
-    width: 10vw;
+    width: 5vw;
 }
 
 #banner {
@@ -188,6 +189,8 @@ img {
 
     text-align: center;
 }
+
+
 
 /*
 comentarios
