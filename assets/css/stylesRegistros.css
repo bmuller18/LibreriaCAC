@@ -1,6 +1,51 @@
 
 
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav {
+    background-color: var(--bg-nav);
+    height: 10vh;
+    display:flex;
+    /*al eje principal row*/
+    /* justify-content: space-between; */
+    /*al eje secundario column*/
+    align-items: center;
+    padding: 0 50px;
+    background-color: #3b3838;
+}
+
+#nav-links {
+    display: flex;
+    /*quitar los puntos de los li*/
+    list-style: none;
+    gap: 30px;
+}
+
+
+#nav-links li a {
+    text-decoration: none; /*saco el subrayado*/
+    color: inherit; /*saco el color violeta y fuerzo a que tome el color aplicado al resto del texto defin en el body*/
+}
+/* Estilos para el body */
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: flex; 
+    align-items: center; 
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
 form {
     background: #fff;
     padding: 20px;
@@ -8,7 +53,6 @@ form {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 600px;
-    color: grey; 
 }
 
 form h2 {
@@ -37,7 +81,7 @@ form .btn {
     border: none;
     border-radius: 5px;
     background-color: #007BFF;
-    color: rgb(47, 41, 41);
+    color: white;
     font-size: 16px;
     cursor: pointer;
 }
