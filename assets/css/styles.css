@@ -1,5 +1,5 @@
 :root {
-    --bg-body : black;
+    --bg-body : grey;
     --bg-nav : #3b3838;
 }
 
@@ -30,6 +30,11 @@ header {
 footer {
     font-family: "Oswald", sans-serif;
     color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
     
 }
 
@@ -98,6 +103,16 @@ img {
     align-items: center;
 }
 
+#registro-links li a {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 /*
 .movies-flex {
     display: flex;
@@ -164,6 +179,14 @@ img {
 }
 #book6:hover{
     transform: scale(1.5);
+}
+
+#registro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
 }
 
 /*
