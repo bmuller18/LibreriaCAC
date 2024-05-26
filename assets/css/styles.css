@@ -1,11 +1,9 @@
 :root {
-    --bg-body : #181419;
-    --bg-nav : #db4648;
+    --bg-body : black;
+    --bg-nav : #3b3838;
 }
 
-/*
-hola soy un comentario
-*/
+
 * {
     margin:0;
     padding:0;
@@ -14,7 +12,7 @@ hola soy un comentario
 
 body {
     background-color: var(--bg-body);
-    font-family: "Nunito", sans-serif;
+    font-family: "poppins", sans-serif;
     color: #FFF;
 }
 
@@ -22,17 +20,29 @@ body {
 header {
     position:sticky;
     top:0;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+   
+}
+
+footer {
+    font-family: "Oswald", sans-serif;
+    color: #FFF;
+    
 }
 
 nav {
     background-color: var(--bg-nav);
-    height: 15vh;
+    height: 10vh;
     display:flex;
     /*al eje principal row*/
     justify-content: space-between;
     /*al eje secundario column*/
     align-items: center;
     padding: 0 50px;
+    background-color: #3b3838;
 }
 
 #nav-links {
@@ -53,13 +63,13 @@ h2 {
 }
 
 img {
-    width: 35vw;
+    width: 10vw;
 }
 
 #banner {
     height: 85vh;
     /*estilos para la imagen de fondo de la seccion*/
-    background-image: url(../img/banner-bg.jpg);
+    background-image: url(../img/banner-libros.jpg);
     background-size: cover;
     background-position: center;
 
@@ -102,17 +112,17 @@ img {
 
 /*estilos seccion tendencias con grid*/
 
-.movie-item-img{
-    height: 200px;
-    width: 150px;
+.book-item-img{
+    height: 40px;
+    width: 20px;
 }
 
-.movie-item-detail {
+.book-item-detail {
     display:none;
 }
 
-.movies-grid {
-    height: 800px;
+.book-grid {
+    height: 400px;
     display:grid;
 
     /*columnas y filas*/
@@ -136,12 +146,26 @@ img {
 
 }
 
-#movie1:hover{
+#book1:hover{
     transform: scale(1.5);
 }
-#movie2:hover{
+#book2:hover{
     transform: scale(1.5);
 }
-#movie3:hover{
+#book3:hover{
     transform: scale(1.5);
 }
+
+#book4:hover{
+    transform: scale(1.5);
+}
+#book5:hover{
+    transform: scale(1.5);
+}
+#book6:hover{
+    transform: scale(1.5);
+}
+
+/*
+comentarios
+*/
