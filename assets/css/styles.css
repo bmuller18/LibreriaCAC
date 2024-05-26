@@ -3,7 +3,6 @@
     --bg-nav : #3b3838;
 }
 
-
 * {
     margin:0;
     padding:0;
@@ -87,7 +86,7 @@ img {
     }
 
 #buscador {
-    height: 100vh;
+    height: 10vh;
     display: flex;
     flex-direction: column;
 
@@ -137,49 +136,39 @@ img {
     display:none;
 }
 
-.book-grid {
-    height: 400px;
-    display:grid;
 
-    /*columnas y filas*/
-    grid-template-columns: repeat(4,200px);
-    grid-template-rows: repeat(2,180px);
-
-
-    /*UBICACION DE LA GRILLA CON RESPECTO A LA ETIQUETA PADRE*/
-   /* justify-content: center; EJE PRINCIPAL(FILA HORIZONTAL)*/
-   /* align-content: center; EJE HORIZONTAL(COLUMNA VERTICAL)*/
-
-    place-content: center; 
-
-    /*UBICO LOS ITEMS CON RESPECTO A SU CELDA*/
-   /* justify-items: center; EJE PRINCIPAL(FILA HORIZONTAL)*/
-   /* align-items: center; EJE HORIZONTAL(COLUMNA VERTICAL)*/
-
-    place-items: center;
-
-    gap:28px;
-
+.books-grid {
+    font-size: 1; /* Para eliminar el espacio entre elementos inline-block */
+    text-align: center;
 }
 
-#book1:hover{
-    transform: scale(1.5);
-}
-#book2:hover{
-    transform: scale(1.5);
-}
-#book3:hover{
-    transform: scale(1.5);
+.movie-container {
+    display: inline-block; /* Para que los elementos estén en línea */
+    margin-right: 5px; /* Para agregar espacio entre elementos */
+    margin: 2.5px;
+    vertical-align: top; /* Alinear los elementos en la parte superior */
 }
 
-#book4:hover{
-    transform: scale(1.5);
+
+
+.movie-item-detail {
+    text-align: center; /* Alinea el texto en el centro */
+    font-size: 1;
 }
-#book5:hover{
-    transform: scale(1.5);
+
+
+.movie-container:hover{
+    transform: scale(1.2);
+    border: 2px solid #222121;
+    box-shadow: #222121;
 }
-#book6:hover{
-    transform: scale(1.5);
+
+.movie-container {
+    background-color: #626f5f; /* Color de fondo */
+    border-radius: 10px; /* Radio de borde */
+    padding: 10px; /* Espaciado interno */
+    width: 200px; /* Ancho del contenedor */
+    height: 400px; /* Altura del contenedor */
 }
 
 #registro {
