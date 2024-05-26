@@ -1,6 +1,6 @@
 :root {
-    --bg-body : #f6f0fc;
-    --bg-nav : #8057a8;
+    --bg-body : grey;
+    --bg-nav : #3b3838;
 }
 
 * {
@@ -11,25 +11,42 @@
 
 body {
     background-color: var(--bg-body);
-    font-family: "Nunito", sans-serif;
-    color: #371657;
+    font-family: "poppins", sans-serif;
+    color: #FFF;
 }
 
 
 header {
     position:sticky;
     top:0;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+   
+}
+
+footer {
+    font-family: "Oswald", sans-serif;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    
 }
 
 nav {
     background-color: var(--bg-nav);
-    height: 15vh;
+    height: 10vh;
     display:flex;
     /*al eje principal row*/
     justify-content: space-between;
     /*al eje secundario column*/
     align-items: center;
     padding: 0 50px;
+    background-color: #3b3838;
 }
 
 #nav-links {
@@ -46,17 +63,18 @@ nav {
 }
 
 h2 {
-    font-size: 3em; 
+    font-size: 3em;
+    
 }
 
 img {
-    width: 35vw;
+    width: 5vw;
 }
 
 #banner {
     height: 85vh;
     /*estilos para la imagen de fondo de la seccion*/
-    background-image: url(../img/banner-bg.jpg);
+    background-image: url(../img/banner-libros.jpg);
     background-size: cover;
     background-position: center;
 
@@ -85,6 +103,16 @@ img {
     align-items: center;
 }
 
+#registro-links li a {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 /*
 .movies-flex {
     display: flex;
@@ -99,14 +127,15 @@ img {
 
 /*estilos seccion tendencias con grid*/
 
-.movie-item-img{
-    height: 200px;
-    width: 150px;
+.book-item-img{
+    height: 40px;
+    width: 20px;
 }
 
-.movie-item-detail {
+.book-item-detail {
     display:none;
 }
+
 
 .books-grid {
     font-size: 1; /* Para eliminar el espacio entre elementos inline-block */
@@ -127,6 +156,7 @@ img {
     font-size: 1;
 }
 
+
 .movie-container:hover{
     transform: scale(1.2);
     border: 0.5px solid #f6f0fc;
@@ -145,3 +175,17 @@ img {
 .movie-container {
     transition: transform 0.25s ease; 
 }
+
+#registro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+
+/*
+comentarios
+*/
